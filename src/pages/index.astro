@@ -1,34 +1,9 @@
 ---
-import CardLayout from "../layouts/CardLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/card.astro";
 ---
 
-<CardLayout title="page Astro">
+<BaseLayout title="page Astro">
 	<h1>Astro</h1>
-	<container>
-		<section>
-			<article>
-				<title>Our Pricing</title>
-			</article>
-			<article>
-				<p>Annually</p>
-				<input
-					type="checkbox"
-					id="toggle"
-					class="toggle--checkbox"
-					checked
-				/>
-				<p>Monthly</p>
-			</article>
-		</section>
-		<section>
-			<p>basic</p>
-			<price>$199.99</price>
-			<ul>
-				<li>500 GB Storage</li>
-				<li>2 Users Allowed</li>
-				<li>Send up to 3 GB</li>
-			</ul>
-			<button>Learn More</button>
-		</section>
-	</container>
-</CardLayout>
+</BaseLayout>
+<Card />
