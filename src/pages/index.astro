@@ -3,15 +3,24 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/card.astro";
 ---
 
-<section>
-	<article>
-		<h1>Our Pricing</h1>
-	</article>
-	<article>
-		<p>Annually</p>
-		<input type="checkbox" id="toggle" class="toggle--checkbox" checked />
-		<p>Monthly</p>
-	</article>
-</section>
+<BaseLayout title="page Astro">
+	<h1>Astro</h1>
 
-<Card />
+	<section>
+		<article>
+			<h1>Our Pricing</h1>
+		</article>
+		<article>
+			<p>Annually</p>
+			<input
+				type="checkbox"
+				id="toggle"
+				class="toggle--checkbox"
+				checked
+			/>
+			<p>Monthly</p>
+		</article>
+	</section>
+
+	<Card />
+</BaseLayout>
